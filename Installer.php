@@ -106,6 +106,7 @@ class Installer implements PluginInterface, EventSubscriberInterface {
 
 		if ( ! empty( $plugin ) ) {
 			$this->downloadUrl = $plugin->getDownloadUrl();
+			$package->setDistUrl($this->downloadUrl);
 		}
 	}
 
